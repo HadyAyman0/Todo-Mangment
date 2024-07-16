@@ -33,7 +33,7 @@ export default function Home() {
     }
     return (
         <>
-            <section className='min-h-screen'>
+            <section className='min-h-screen bg-[#000000]'>
                 <div className="conatiner p-5 flex flex-col gap-8 justify-center items-center  my-5 ">
                     <div className='p-10 border-[#93B1A6] rounded-2xl border-[1px] flex justify-center items-center gap-8'>
                         <div>
@@ -100,7 +100,6 @@ export default function Home() {
 
                 </div>
             </section>
-            <h1>hady</h1>
         </>
     )
 }

@@ -6,10 +6,13 @@ import { ComplexNavbar } from '../ComplexNavbar/ComplexNavbar'
 export default function Layout() {
   return (
     <>
-    <div className="min-h-screen bg-[#000000]">
+
+    <section className='bg-[#000000]'>
     <ComplexNavbar/>
     <Outlet/>
-    </div>
+    </section>
+
+    
     </>
   )
 }

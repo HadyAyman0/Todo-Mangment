@@ -27,7 +27,7 @@ import { actions } from "../../app/GoogleToken.slice";
 const profileMenuItems = [
   {
     icon: PowerIcon,
-    label : ""
+    label: ""
   },
 ];
 
@@ -36,9 +36,9 @@ function ProfileMenu() {
   const { t } = useTranslation()
   const closeMenu = () => setIsMenuOpen(false);
   const { LogOut } = UserTokenActions;
-  const {SetResponse} = actions
+  const { SetResponse } = actions
   const dispatch = useDispatch();
-  const {response} = useSelector(function(store){
+  const { response } = useSelector(function (store) {
     return store.googleToken;
   })
   return (
@@ -49,8 +49,8 @@ function ProfileMenu() {
           color="blue-gray"
           className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto"
         >
-       
-         
+
+
           <Avatar
             variant="circular"
             size="sm"
@@ -147,8 +147,8 @@ export function ComplexNavbar() {
 
   return (
     <>
-      <Navbar className="  sticky  bg-[#000000] p-3  h-full shadow-none top-0 z-50  mx-auto border-none rounded-none   ">
-        <div className="container bg-opacity-0  shadow-none">
+      <Navbar className=" sticky bg-[#000000]  top-0 z-50 max-h-full max-w-full border-none rounded-none px-4 py-3 lg:px-8 lg:py-4  ">
+        <div className="container bg-opacity-0 w-full  shadow-none">
           <div className="relative mx-auto flex items-center shadow-none justify-between p-0  text-[#5C8374]">
             <Typography
               as="a"
@@ -178,7 +178,7 @@ export function ComplexNavbar() {
                 <Button size="sm" variant="text" className=" text-white border-[1px]  font-Arsenal  rounded-xl">
                   <Link to="/auth/signin">{t("Sign in")}</Link>
                 </Button>
-              </div> :   <ProfileMenu />}           
+              </div> : <ProfileMenu />}
             </div>
           </div>
         </div>
